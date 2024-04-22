@@ -22,6 +22,11 @@ body {
     color: var(--bg-color);
 }
 
+section{
+    padding: 4.5rem 0 1.5rem;
+
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -101,3 +106,79 @@ header {
     background: #aa1109;
 }
 
+.section-home__arrow{
+    width: 90%;
+    cursor: pointer;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;   
+}
+
+.slider__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider__item {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.slider__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+}
+.slider__controls-left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__controls-right{
+    position: absolute;
+    top: 50%;
+    left:auto;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__control {
+    font-size: 39px;
+    width: 40px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.slider__control:hover {
+    color: #aa1109;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+}   

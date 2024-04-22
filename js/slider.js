@@ -1,33 +1,43 @@
-(function () {
-    const slider = [...document.querySelectorAll(".testimony__body")];
-    const buttonNext = document.querySelector("#next");
-    const buttonBefore = document.querySelector("#before");
+(function() {
+const sliderContainer = document.querySelector('.slider-container');
+const slides = Array.from(sliderContainer.querySelectorAll('.slide'));
 
-    let value;
+let currentSlideIndex = 0;
 
-    buttonNext.addEventListener("click", () => {
-        changePosition(1);
+function showSlide(index) {
+    slides.forEach((slide) => {
+        slide.style.display = 'none';
     });
 
-    buttonBefore.addEventListener("click", () => {
-        changePosition(-1);
-    });
+    // Show the current slide
+    slides[index].style.display = 'block';
+}
 
-    const changePosition = (add) => {
-        const currentTestimony = document.querySelector(
-            ".testimony__body--show"
-        ).dataset.id;
+// Function to handle next slide
+function nextSlide() {
+    currentSlideIndex++;
+    if (currentSlideIndex >= slides.length) {
+        currentSlideIndex = 0;
+    }
+    showSlide(currentSlideIndex);
+}
 
-        value = Number(currentTestimony);
-        value += add;
+// Function to handle previous slide
+function prevSlide() {
+    currentSlideIndex--;
+    if (currentSlideIndex < 0) {
+        currentSlideIndex = slides.length - 1;
+    }
+    showSlide(currentSlideIndex);
+}
 
-        slider[Number(currentTestimony) - 1].classList.remove(
-            "testimony__body--show"
-        );
+// Show the initial slide
+showSlide(currentSlideIndex);
 
-        if (value === slider.length + 1 || value === 0) {
-            value = value === 0 ? slider.length : 1;
-        }
-        slider[value - 1].classList.add("testimony__body--show");
-    };
-})();
+// Add event listeners for next and previous buttons
+const nextButton = document.querySelector('#before');
+const prevButton = document.querySelector('#next');
+
+nextButton.addEventListener('click', nextSlide);
+prevButton.addEventListener('click', prevSlide);
+})();       
