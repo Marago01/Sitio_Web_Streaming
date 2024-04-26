@@ -1,43 +1,58 @@
 (function() {
-const sliderContainer = document.querySelector('.slider-container');
-const slides = Array.from(sliderContainer.querySelectorAll('.slide'));
+    const sliderContainer = document.querySelector('.slider-container');
+    const slides = Array.from(sliderContainer.querySelectorAll('.slide'));
 
-let currentSlideIndex = 0;
+    let currentSlideIndex = 0;
+    let slideInterval;
 
-function showSlide(index) {
-    slides.forEach((slide) => {
-        slide.style.display = 'none';
+    function showSlide(index) {
+        slides.forEach((slide) => {
+            slide.style.display = 'none';
+        });
+
+        slides[index].style.display = 'block';
+    }
+
+    function nextSlide() {
+        currentSlideIndex++;
+        if (currentSlideIndex >= slides.length) {
+            currentSlideIndex = 0;
+        }
+        showSlide(currentSlideIndex);
+    }
+
+    function prevSlide() {
+        currentSlideIndex--;
+        if (currentSlideIndex < 0) {
+            currentSlideIndex = slides.length - 1;
+        }
+        showSlide(currentSlideIndex);
+    }
+
+    function startAutoSlide() {
+        slideInterval = setInterval(nextSlide, 3000); }
+
+    function stopAutoSlide() {
+        clearInterval(slideInterval);
+    }
+
+    showSlide(currentSlideIndex);
+
+    const nextButton = document.querySelector('#next');
+    const prevButton = document.querySelector('#before');
+
+    nextButton.addEventListener('click', () => {
+        nextSlide();
+        stopAutoSlide(); 
+        startAutoSlide()
     });
 
-    // Show the current slide
-    slides[index].style.display = 'block';
-}
+    prevButton.addEventListener('click', () => {
+        prevSlide();
+        stopAutoSlide(); 
+        startAutoSlide()
+    });
 
-// Function to handle next slide
-function nextSlide() {
-    currentSlideIndex++;
-    if (currentSlideIndex >= slides.length) {
-        currentSlideIndex = 0;
-    }
-    showSlide(currentSlideIndex);
-}
-
-// Function to handle previous slide
-function prevSlide() {
-    currentSlideIndex--;
-    if (currentSlideIndex < 0) {
-        currentSlideIndex = slides.length - 1;
-    }
-    showSlide(currentSlideIndex);
-}
-
-// Show the initial slide
-showSlide(currentSlideIndex);
-
-// Add event listeners for next and previous buttons
-const nextButton = document.querySelector('#before');
-const prevButton = document.querySelector('#next');
-
-nextButton.addEventListener('click', nextSlide);
-prevButton.addEventListener('click', prevSlide);
-})();       
+    startAutoSlide();
+})();
+      
