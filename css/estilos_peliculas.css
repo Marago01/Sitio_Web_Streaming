@@ -387,6 +387,19 @@
     text-align: center;
 }
 
+.movie-details strong{
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.movie-details p{
+    color: #747474;
+    font-size: 1rem;
+    margin-top: 10px 0px;
+}
+
 .watch-btn:hover{
     background-color: var(--bg-purple);
     transition: all ease 0.3s;
