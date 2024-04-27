@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos_peliculas.css">
+    <link rel="shortcut icon" href="./images/icons/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latests/css/boxicons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <title>Peliculas</title>
+</head>
+
+
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <i class='bx bx-movie-play'></i>
+                <h2 class="nav__title">NexStream</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+
+                <li class="nav__items">
+                    <a href="index.html" class="home-active nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="peliculas.html" class="nav__links">Peliculas</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Series</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links btn">Iniciar sesion</a>
+                </li>
+
+                <img src="images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+        <img src="images/leftarrow.svg" class="prev-button slider__control slider__controls-left" id="before">
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img class="slider__image" src="./images/peliculas/dune.jpg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img class="slider__image" src="./images/peliculas/avengers.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img class="slider__image" src="./images/peliculas/Batman.jpg" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img class="slider__image" src="./images/peliculas/pantera.jpg" alt="Slide 4">
+                </div>
+            </div>
+        </div>
+
+        <img src="images/rightarrow.svg" class="next-button slider__control slider__controls-right" id="next">
+    </section>
+
+    <section id="main-slider">
+
+       
+
+        <div class="swiper mySwiper">
+
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="main-slider-box">
+
+                    <a href="#" class="main-slider-overlay">
+                        <i class="fas fa-play"></i>
+                    </a>
+        
+                    <div class="main-slider-img">
+                        <img src="images/peliculas/the_marvels.jpg" alt="poster 1">
+                    </div>
+        
+                    <div class="main-slider-text">
+                        <span class="quality">Full HD</span>
+        
+                        <div class="bottom-text">
+                            <div class="movie-name">
+                                <span>2023</span>
+                                <strong>The Marvels: Marvel Universe</strong>
+                            </div>
+        
+                            <div class="categiry-rating">
+                                <div class="category">
+                                    <a href="#">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                                </div>
+                                <div class="rating">
+                                    5.2 <img src="images/IMDb-icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+              </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="main-slider-box">
+        
+                            <a href="#" class="main-slider-overlay">
+                                <i class="fas fa-play"></i>
+                            </a>
+                
+                            <div class="main-slider-img">
+                                <img src="images/peliculas/oppenheimer.jpg" alt="poster 2">
+                            </div>
+                
+                            <div class="main-slider-text">
+                                <span class="quality">Full HD</span>
+                
+                                <div class="bottom-text">
+                                    <div class="movie-name">
+                                        <span>2023</span>
+                                        <strong>Oppenheimer</strong>
+                                    </div>
+                
+                                    <div class="categiry-rating">
+                                        <div class="category">
+                                            <a href="#">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                                        </div>
+                                        <div class="rating">
+                                            5.2 <img src="images/IMDb-icon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                      </div>
+
+                            <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="main-slider-box">
+
+                    <a href="#" class="main-slider-overlay">
+                        <i class="fas fa-play"></i>
+                    </a>
+        
+                    <div class="main-slider-img">
+                        <img src="images/peliculas/spider.jpg" alt="poster 3">
+                    </div>
+        
+                    <div class="main-slider-text">
+                        <span class="quality">Full HD</span>
+        
+                        <div class="bottom-text">
+                            <div class="movie-name">
+                                <span>2023</span>
+                                <strong>Spider-Man: No Way Home</strong>
+                            </div>
+        
+                            <div class="categiry-rating">
+                                <div class="category">
+                                    <a href="#">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                                </div>
+                                <div class="rating">
+                                    5.2 <img src="images/IMDb-icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+              </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="main-slider-box">
+        
+                            <a href="#" class="main-slider-overlay">
+                                <i class="fas fa-play"></i>
+                            </a>
+                
+                            <div class="main-slider-img">
+                                <img src="images/peliculas/strange.jpg" alt="poster 4">
+                            </div>
+                
+                            <div class="main-slider-text">
+                                <span class="quality">Full HD</span>
+                
+                                <div class="bottom-text">
+                                    <div class="movie-name">
+                                        <span>2023</span>
+                                        <strong>Dr. Strange: Multiverse Of Madness</strong>
+                                    </div>
+                
+                                    <div class="categiry-rating">
+                                        <div class="category">
+                                            <a href="#">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                                        </div>
+                                        <div class="rating">
+                                            5.2 <img src="images/IMDb-icon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                      </div>
+
+                        <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="main-slider-box">
+        
+                            <a href="#" class="main-slider-overlay">
+                                <i class="fas fa-play"></i>
+                            </a>
+                
+                            <div class="main-slider-img">
+                                <img src="images/peliculas/madameweb.jpg" alt="poster 5">
+                            </div>
+                
+                            <div class="main-slider-text">
+                                <span class="quality">Full HD</span>
+                
+                                <div class="bottom-text">
+                                    <div class="movie-name">
+                                        <span>2023</span>
+                                        <strong>Madame Web</strong>
+                                    </div>
+                
+                                    <div class="categiry-rating">
+                                        <div class="category">
+                                            <a href="#">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                                        </div>
+                                        <div class="rating">
+                                            5.2 <img src="images/IMDb-icon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                      </div>  
+            
+            </div>
+
+            <section class="slider-btns">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </section>
+            
+          </div>
+
+         
+    </section>
+
+    <section id="latest">
+        <div class="latest-heading">
+            <h1>Peliculas recomendadas</h1>
+        </div>
+        <div class="post-container">
+
+            <!-- Post 1 -->
+            <div class="post-box">
+                <div class="post-img">
+                    <img src="images/peliculas/barbie.jpg" alt="">
+                </div>
+                <div class="main-slider-text">
+                    <span class="quality">Full HD</span>
+    
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2023</span>
+                            <a href="pelicula1.html">The Marvels: Marvel Universe</a>
+                        </div>
+    
+                        <div class="categiry-rating">
+                            <div class="category">
+                                <a href="pelicula1.html">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                            </div>
+                            <div class="rating">
+                                5.2 <img src="images/IMDb-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="post-box">
+                <div class="post-img">
+                    <img src="images/peliculas/barbie.jpg" alt="">
+                </div>
+                <div class="main-slider-text">
+                    <span class="quality">Full HD</span>
+    
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2023</span>
+                            <a href="#">The Marvels: Marvel Universe</a>
+                        </div>
+    
+                        <div class="categiry-rating">
+                            <div class="category">
+                                <a href="#">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                            </div>
+                            <div class="rating">
+                                5.2 <img src="images/IMDb-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="post-box">
+                <div class="post-img">
+                    <img src="images/peliculas/barbie.jpg" alt="">
+                </div>
+                <div class="main-slider-text">
+                    <span class="quality">Full HD</span>
+    
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2023</span>
+                            <a href="#">The Marvels: Marvel Universe</a>
+                        </div>
+    
+                        <div class="categiry-rating">
+                            <div class="category">
+                                <a href="#">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                            </div>
+                            <div class="rating">
+                                5.2 <img src="images/IMDb-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 4 -->
+            <div class="post-box">
+                <div class="post-img">
+                    <img src="images/peliculas/barbie.jpg" alt="">
+                </div>
+                <div class="main-slider-text">
+                    <span class="quality">Full HD</span>
+    
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2023</span>
+                            <a href="#">The Marvels: Marvel Universe</a>
+                        </div>
+    
+                        <div class="categiry-rating">
+                            <div class="category">
+                                <a href="#">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                            </div>
+                            <div class="rating">
+                                5.2 <img src="images/IMDb-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 5 -->
+            <div class="post-box">
+                <div class="post-img">
+                    <img src="images/peliculas/barbie.jpg" alt="">
+                </div>
+                <div class="main-slider-text">
+                    <span class="quality">Full HD</span>
+    
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2023</span>
+                            <a href="#">The Marvels: Marvel Universe</a>
+                        </div>
+    
+                        <div class="categiry-rating">
+                            <div class="category">
+                                <a href="#">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                            </div>
+                            <div class="rating">
+                                5.2 <img src="images/IMDb-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 6 -->
+            <div class="post-box">
+                <div class="post-img">
+                    <img src="images/peliculas/barbie.jpg" alt="">
+                </div>
+                <div class="main-slider-text">
+                    <span class="quality">Full HD</span>
+    
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2023</span>
+                            <a href="#">The Marvels: Marvel Universe</a>
+                        </div>
+    
+                        <div class="categiry-rating">
+                            <div class="category">
+                                <a href="#">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                            </div>
+                            <div class="rating">
+                                5.2 <img src="images/IMDb-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 7 -->
+            <div class="post-box">
+                <div class="post-img">
+                    <img src="images/peliculas/barbie.jpg" alt="">
+                </div>
+                <div class="main-slider-text">
+                    <span class="quality">Full HD</span>
+    
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2023</span>
+                            <a href="#">The Marvels: Marvel Universe</a>
+                        </div>
+    
+                        <div class="categiry-rating">
+                            <div class="category">
+                                <a href="#">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                            </div>
+                            <div class="rating">
+                                5.2 <img src="images/IMDb-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 8 -->
+            <div class="post-box">
+                <div class="post-img">
+                    <img src="images/peliculas/barbie.jpg" alt="">
+                </div>
+                <div class="main-slider-text">
+                    <span class="quality">Full HD</span>
+    
+                    <div class="bottom-text">
+                        <div class="movie-name">
+                            <span>2023</span>
+                            <a href="#">The Marvels: Marvel Universe</a>
+                        </div>
+    
+                        <div class="categiry-rating">
+                            <div class="category">
+                                <a href="#">Acción</a>,<a href="#">Drama</a>,<a href="#">Suspenso</a>
+                            </div>
+                            <div class="rating">
+                                5.2 <img src="images/IMDb-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+
+        <div class="page-number">
+            <a href="#" class="page-active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            ...
+            <a href="#">120</a>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">NexStream</h2>
+
+                <p class="paragraph_footer">NexStream es una empresa dedicada al entretenimiento digital que ofrece una amplia variedad de contenido audiovisual a través de su plataforma de streaming. Con un enfoque en la comodidad y accesibilidad, NexStream permite a sus usuarios disfrutar de películas, series y programas de televisión desde cualquier dispositivo conectado a internet.</p>
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="images/instagram.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="images/youtube.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="images/tiktok.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">NexStream</h3>
+        </section>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay:{
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 50,
+            },
+          },
+        });
+      </script>
+
+    <script src="js/slider.js"></script>
+</body>
+
+
+</html>
