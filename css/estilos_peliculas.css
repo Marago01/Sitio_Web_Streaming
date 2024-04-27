@@ -173,6 +173,10 @@
 }
 
 .latest-heading{
+    background-color: #000000;
+    opacity: 1;
+    background-image: radial-gradient(#9192a5 0.6000000000000001px, #000000 0.6000000000000001px);
+    background-size: 12px 12px;
    width: 100%;
    padding: 10px 20px;
    background-color:var(--text-color) ;
